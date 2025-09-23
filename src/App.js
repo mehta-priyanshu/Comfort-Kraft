@@ -44,7 +44,7 @@ function AdminStateManager() {
         <Header isAdmin={isAdmin} onLogout={handleLogout} /> 
         <Routes>
           <Route path="/" element={<Home />} />
-          {/*<Route path="/Shop" element={<Shop isAdmin={isAdmin} />} />*/}
+          <Route path="/Shop" element={<Shop isAdmin={isAdmin} />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
