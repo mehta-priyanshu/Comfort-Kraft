@@ -1,0 +1,54 @@
+.help-container {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0dccd, #f3eee5);
+  min-height: 100vh;
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+  color: #4a3f35;
+}
+
+.help-header {
+  text-align: center;
+  color: #a87f54;
+  font-size: 2.3rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.help-intro {
+  text-align: center;
+  font-size: 1.08rem;
+  color: #6b6b6b;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.help-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.help-card {
+  background: #fffbe8;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(168,127,84,0.09);
+  padding: 24px 22px 20px 22px;
+  transition: box-shadow 0.2s;
+}
+
+.help-question {
+  margin-bottom: 10px;
+  color: #a87f54;
+  font-size: 1.22rem;
+  font-weight: 600;
+}
+
+.help-answer {
+  color: #6b6b6b;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,130 @@
+.cart-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0dccd, #f3eee5);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+  color: #333;
+}
+
+.cart-container h1 {
+  color: #4a3f35;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.empty-cart-msg {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6b6b6b;
+  margin-top: 40px;
+}
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1.8px solid #b49f89;
+}
+
+.item-info {
+  flex: 2;
+}
+
+.item-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #4a3f35;
+}
+
+.item-price {
+  margin-left: 10px;
+  color: #a87f54;
+  font-weight: 600;
+}
+
+.item-qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.qty-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #a87f54;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.qty-btn:hover:not(:disabled) {
+  background-color: #926a41;
+}
+
+.qty-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.item-quantity {
+  min-width: 26px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #926a41;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.remove-btn:hover {
+  color: #a87f54;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #4a3f35;
+}
+
+.clear-btn {
+  background-color: #a87f54;
+  color: #fff;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(168, 127, 84, 0.4);
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #926a41;
+  box-shadow: 0 0 25px rgba(168, 127, 84, 0.6);
+}

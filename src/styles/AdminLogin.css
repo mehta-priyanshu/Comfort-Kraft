@@ -1,0 +1,72 @@
+.admin-login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 32px 24px;
+  background: linear-gradient(135deg, #e0dccd, #f3eee5);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  color: #4a3f35;
+}
+
+.admin-login-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #a87f54;
+}
+
+.admin-login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-login-container label {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #4a3f35;
+}
+
+.admin-login-container input[type="password"] {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #b49f89;
+  background-color: #f8f7f3;
+  color: #333;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+.admin-login-container input[type="password"]:focus {
+  border-color: #926a41;
+}
+
+.admin-login-container button {
+  padding: 12px 30px;
+  background-color: #a87f54;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(168, 127, 84, 0.4);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-login-container button:hover {
+  background-color: #926a41;
+  color: #000;
+  box-shadow: 0 0 25px rgba(168, 127, 84, 0.6);
+}
+
+.admin-login-container p.error-message {
+  color: #e57373;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+}

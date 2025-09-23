@@ -1,0 +1,97 @@
+.about-container {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0dccd, #f3eee5);
+  padding: 40px 20px;
+  color: #333;
+}
+
+.about-banner {
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 10px;
+  margin-top: -40px;
+}
+
+.about-banner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+}
+
+.about-banner p {
+  font-size: 18px;
+  color: #6b6b6b;
+  margin-bottom: 0px; /* tightened spacing after subtitle */
+}
+
+.about-section {
+  margin-top: 0;     /* remove top margin for first section */
+  margin-bottom: 40px;
+  border-left: none !important; /* forcibly remove any left border */
+}
+
+.about-section:first-of-type {
+  margin-top: 0;
+}
+
+/* Remove all left lines and pseudo-element lines on about-section */
+.about-section::before,
+.about-section::after,
+.about-section h2::before {
+  display: none !important;
+  content: none !important;
+  border-left: none !important;
+  box-shadow: none !important;
+}
+
+/* Decorative line under h2 only, neatly centered */
+.about-section h2 {
+  font-size: 28px;
+  color: #4a3f35;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.about-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #b49f89;
+  margin: 8px auto 0 auto; /* line sits just below h2, centered */
+  border-radius: 2px;
+}
+
+/* Paragraph and list styles */
+.about-section p,
+.about-section ul {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.about-section ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+/* Remove right tick (if you previously used a pseudo-element) */
+.about-section ul li::before {
+  content: none !important;
+}
+
+/* Adjust list item indent if needed: */
+.about-section ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 0;
+}
+
+.about-footer-quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  color: #5c534a;
+  margin-top: 40px;
+}
