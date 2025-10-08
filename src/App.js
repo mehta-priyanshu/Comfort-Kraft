@@ -19,6 +19,7 @@ import StudyChair from './pages/StudyChair';
 //import AdminLogin from './pages/AdminLogin';
 import Faq from './pages/FAQs'; 
 import HelpCenter from './pages/Helpcenter'; 
+import ScrollToTop from './pages/ScrollToTop';
 
 function AdminStateManager() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -42,6 +43,7 @@ function AdminStateManager() {
   return (
     <div className="App">
         <Header isAdmin={isAdmin} onLogout={handleLogout} /> 
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Shop" element={<Shop isAdmin={isAdmin} />} />
