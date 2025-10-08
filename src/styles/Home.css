@@ -1,13 +1,3 @@
-      /*<div className="hero-section">
-        <h1 className="hero-title">Welcome to Comfort-Kraft</h1>
-        <p className="hero-subtitle">
-          Discover futuristic comfort with our smart, ergonomic, and stylish chairs.
-        </p>
-        <button className="btn-neon" onClick={() => navigate("/shop")}>
-          Explore Products
-        </button>
-      </div>*/
-
 .slide-showcase.full-width {
   display: flex;
   gap: 40px;
@@ -22,6 +12,7 @@
   box-sizing: border-box;
   color: #4a3f35;
   user-select: none;
+  overflow: hidden;
 }
 
 .slide-details {
@@ -49,9 +40,13 @@
   justify-content: center;
   align-items: center;
   max-height: 360px;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .slide-image {
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 360px;
   object-fit: contain;
@@ -62,13 +57,16 @@
 @media (max-width: 860px) {
   .slide-showcase.full-width {
     flex-direction: column;
+    align-items: center;
     padding: 24px 20px;
     max-width: 95vw;
+    height: auto;
   }
   
   .slide-image-container {
-    max-height: 280px;
-    margin-top: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 .benefits-section-custom.full-width {

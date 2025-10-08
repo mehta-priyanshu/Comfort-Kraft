@@ -11,12 +11,12 @@ import About from './pages/About';
 import Product from './pages/Product';
 //import Checkout from './pages/Checkout';
 import Footer from './pages/Footer';
-import AdminPanel from './pages/AdminPanel'; 
+//import AdminPanel from './pages/AdminPanel'; 
 import OfficeChair from './pages/OfficeChair';
 import BossChair from './pages/BossChair';
 import DiningChair from './pages/DiningChair';
 import StudyChair from './pages/StudyChair';
-import AdminLogin from './pages/AdminLogin';
+//import AdminLogin from './pages/AdminLogin';
 import Faq from './pages/FAQs'; 
 import HelpCenter from './pages/Helpcenter'; 
 
@@ -28,11 +28,11 @@ function AdminStateManager() {
     setIsAdmin(storedAdmin === 'true');
   }, []);
 
-  const handleLogin = () => {
+  /*const handleLogin = () => {
     setIsAdmin(true);
     localStorage.setItem('isAdmin', 'true');
     navigate('/admin/panel');
-  }
+  }*/
 
   const handleLogout = () => {
     setIsAdmin(false);
