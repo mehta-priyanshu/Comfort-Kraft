@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import "../styles/Shop.css";
 
 // Import with exact folder name and casing:
-import chair2 from "../assets/BossChairs/chair2.jpeg";
+import D_L0095 from "../assets/ErgonomicsChair/5D_L0095.jpg";
 
 const BossChairProducts = [
   {
