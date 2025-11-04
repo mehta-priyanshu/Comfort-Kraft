@@ -113,30 +113,30 @@ const DiningChair = () => {
       </div>
       <h1 className="shop-header">Dining Chairs</h1>
             <div className="features-bar-unique">
-  <div className="feature-unique">
-    <span className="feature-unique-icon" aria-label="Elegant">🍽️</span>
-    Elegant Styling
-    <br />
-    <span className="feature-unique-desc">Adds charm to your dining space</span>
-  </div>
-  <div className="feature-unique">
-    <span className="feature-unique-icon" aria-label="Comfort">🪑</span>
-    All-Day Comfort
-    <br />
-    <span className="feature-unique-desc">Soft padding for long meals</span>
-  </div>
-  <div className="feature-unique">
-    <span className="feature-unique-icon" aria-label="Easy Clean">🧼</span>
-    Easy to Clean
-    <br />
-    <span className="feature-unique-desc">Spill-resistant and low-maintenance</span>
-  </div>
-  <div className="feature-unique">
-    <span className="feature-unique-icon" aria-label="Strong">💪</span>
-    Strong Frame
-    <br />
-    <span className="feature-unique-desc">Made from premium hardwood</span>
-  </div>
+              <div className="feature-unique">
+                <span className="feature-unique-icon" aria-label="Elegant">🍽️</span>
+                Elegant Styling
+                <br />
+                <span className="feature-unique-desc">Adds charm to your dining space</span>
+              </div>
+              <div className="feature-unique">
+                <span className="feature-unique-icon" aria-label="Comfort">🪑</span>
+                All-Day Comfort
+                <br />
+                <span className="feature-unique-desc">Soft padding for long meals</span>
+              </div>
+              <div className="feature-unique">
+                <span className="feature-unique-icon" aria-label="Easy Clean">🧼</span>
+                Easy to Clean
+                <br />
+                <span className="feature-unique-desc">Spill-resistant and low-maintenance</span>
+              </div>
+              <div className="feature-unique">
+                <span className="feature-unique-icon" aria-label="Strong">💪</span>
+                Strong Frame
+                <br />
+                <span className="feature-unique-desc">Made from premium hardwood</span>
+              </div>
 </div>
       <div className="filter-row">
         <button className="filter-row-btn" onClick={onDrawerOpen}>

@@ -5,7 +5,7 @@ import "../styles/Shop.css";
 // Import with exact folder name and casing:
 import D_L0095 from "../assets/ErgonomicsChairs/5D_L0095.JPG";
 
-const BossChairProducts = [
+const ErgonomicsChairProducts = [
   {
     id: "2",
     name: "CyberSit Alpha",
@@ -20,12 +20,12 @@ const BossChairProducts = [
 ];
 
 // Extract colors for color filters dynamically
-const COLOR_OPTIONS = [...new Set(BossChairProducts.map(p => p.color))];
+const COLOR_OPTIONS = [...new Set(ErgonomicsChairProducts.map(p => p.color))];
 
 const MIN_PRICE = 0;
-const MAX_PRICE = Math.max(...BossChairProducts.map(p => p.price));
+const MAX_PRICE = Math.max(...ErgonomicsChairProducts.map(p => p.price));
 
-const BossChair = () => {
+const ErgonomicChair = () => {
   const navigate = useNavigate();
 
   // Filter drawer state
@@ -77,7 +77,7 @@ const BossChair = () => {
   };
 
   // Filter products based on current filters
-  const filteredProducts = BossChairProducts.filter(p => {
+  const filteredProducts = ErgonomicsChairProducts.filter(p => {
     // Availability filter
     if (filterAvail.in && !p.inStock) return false;
     if (filterAvail.out && p.inStock) return false;
@@ -96,9 +96,9 @@ const BossChair = () => {
       <div className="breadcrumb">
         <Link to="/" className="breadcrumb-link">Home</Link>
         <span className="breadcrumb-separator">/</span>
-        <span className="breadcrumb-current">Boss Chair</span>
+        <span className="breadcrumb-current">Ergonomic Chair</span>
       </div>
-      <h1 className="shop-header">Boss Chairs</h1>
+      <h1 className="shop-header">Ergonomic Chairs</h1>
 
       <div className="features-bar-unique">
         <div className="feature-unique">
@@ -138,7 +138,7 @@ const BossChair = () => {
           <span className="filter-row-label">Search Filter</span>
         </button>
         <span className="filter-row-products">
-          {BossChairProducts.length} product{BossChairProducts.length !== 1 ? "s" : ""}
+          {ErgonomicsChairProducts.length} product{ErgonomicsChairProducts.length !== 1 ? "s" : ""}
         </span>
       </div>
 
@@ -160,11 +160,11 @@ const BossChair = () => {
               <div className="drawer-dropdown-section">
                 <label className="filter-checkbox">
                   <input type="checkbox" checked={filterAvail.in} onChange={() => handleAvail("in")} />
-                  In stock ({BossChairProducts.filter(p => p.inStock).length})
+                  In stock ({ErgonomicsChairProducts.filter(p => p.inStock).length})
                 </label>
                 <label className="filter-checkbox">
                   <input type="checkbox" checked={filterAvail.out} onChange={() => handleAvail("out")} />
-                  Out of stock ({BossChairProducts.filter(p => !p.inStock).length})
+                  Out of stock ({ErgonomicsChairProducts.filter(p => !p.inStock).length})
                 </label>
               </div>
             )}
@@ -267,4 +267,4 @@ const BossChair = () => {
   );
 };
 
-export default BossChair;
+export default ErgonomicChair;

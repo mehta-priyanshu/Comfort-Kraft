@@ -5,7 +5,7 @@ import "../styles/Shop.css";
 // Import with exact folder name and casing:
 import D_L0095 from "../assets/ErgonomicsChairs/5D_L0095.JPG";
 
-const BossChairProducts = [
+const ExecutiveChairProducts = [
   {
     id: "2",
     name: "CyberSit Alpha",
@@ -20,12 +20,12 @@ const BossChairProducts = [
 ];
 
 // Extract colors for color filters dynamically
-const COLOR_OPTIONS = [...new Set(BossChairProducts.map(p => p.color))];
+const COLOR_OPTIONS = [...new Set(ExecutiveChairProducts.map(p => p.color))];
 
 const MIN_PRICE = 0;
-const MAX_PRICE = Math.max(...BossChairProducts.map(p => p.price));
+const MAX_PRICE = Math.max(...ExecutiveChairProducts.map(p => p.price));
 
-const BossChair = () => {
+const ExecutiveChair = () => {
   const navigate = useNavigate();
 
   // Filter drawer state
@@ -77,7 +77,7 @@ const BossChair = () => {
   };
 
   // Filter products based on current filters
-  const filteredProducts = BossChairProducts.filter(p => {
+  const filteredProducts = ExecutiveChairProducts.filter(p => {
     // Availability filter
     if (filterAvail.in && !p.inStock) return false;
     if (filterAvail.out && p.inStock) return false;
@@ -96,36 +96,36 @@ const BossChair = () => {
       <div className="breadcrumb">
         <Link to="/" className="breadcrumb-link">Home</Link>
         <span className="breadcrumb-separator">/</span>
-        <span className="breadcrumb-current">Boss Chair</span>
+        <span className="breadcrumb-current">Executive Chair</span>
       </div>
-      <h1 className="shop-header">Boss Chairs</h1>
+      <h1 className="shop-header">Executive Chairs</h1>
 
-      <div className="features-bar-unique">
-        <div className="feature-unique">
-          <span className="feature-unique-icon" aria-label="Luxury">👑</span>
-          Executive Luxury
-          <br />
-          <span className="feature-unique-desc">Sophisticated design for leaders</span>
-        </div>
-        <div className="feature-unique">
-          <span className="feature-unique-icon" aria-label="Support">🛋️</span>
-          Max Support
-          <br />
-          <span className="feature-unique-desc">Extra cushioning for long hours</span>
-        </div>
-        <div className="feature-unique">
-          <span className="feature-unique-icon" aria-label="Premium">💼</span>
-          Premium Materials
-          <br />
-          <span className="feature-unique-desc">Genuine leather and metal finish</span>
-        </div>
-        <div className="feature-unique">
-          <span className="feature-unique-icon" aria-label="Warranty">📜</span>
-          Extended Warranty
-          <br />
-          <span className="feature-unique-desc">3-year coverage for peace of mind</span>
-        </div>
-      </div>
+            <div className="features-bar-unique">
+                <div className="feature-unique">
+                    <span className="feature-unique-icon" aria-label="Elegant">🍽️</span>
+                    Elegant Styling
+                    <br />
+                    <span className="feature-unique-desc">Adds charm to your dining space</span>
+                </div>
+                <div className="feature-unique">
+                    <span className="feature-unique-icon" aria-label="Comfort">🪑</span>
+                    All-Day Comfort
+                    <br />
+                    <span className="feature-unique-desc">Soft padding for long meals</span>
+                </div>
+                <div className="feature-unique">
+                    <span className="feature-unique-icon" aria-label="Easy Clean">🧼</span>
+                    Easy to Clean
+                    <br />
+                    <span className="feature-unique-desc">Spill-resistant and low-maintenance</span>
+                </div>
+                <div className="feature-unique">
+                    <span className="feature-unique-icon" aria-label="Strong">💪</span>
+                    Strong Frame
+                    <br />
+                    <span className="feature-unique-desc">Made from premium hardwood</span>
+                </div>
+            </div>
 
       {/* Filter button */}
       <div className="filter-row">
@@ -138,7 +138,7 @@ const BossChair = () => {
           <span className="filter-row-label">Search Filter</span>
         </button>
         <span className="filter-row-products">
-          {BossChairProducts.length} product{BossChairProducts.length !== 1 ? "s" : ""}
+          {ExecutiveChairProducts.length} product{ExecutiveChairProducts.length !== 1 ? "s" : ""}
         </span>
       </div>
 
@@ -160,11 +160,11 @@ const BossChair = () => {
               <div className="drawer-dropdown-section">
                 <label className="filter-checkbox">
                   <input type="checkbox" checked={filterAvail.in} onChange={() => handleAvail("in")} />
-                  In stock ({BossChairProducts.filter(p => p.inStock).length})
+                  In stock ({ExecutiveChairProducts.filter(p => p.inStock).length})
                 </label>
                 <label className="filter-checkbox">
                   <input type="checkbox" checked={filterAvail.out} onChange={() => handleAvail("out")} />
-                  Out of stock ({BossChairProducts.filter(p => !p.inStock).length})
+                  Out of stock ({ExecutiveChairProducts.filter(p => !p.inStock).length})
                 </label>
               </div>
             )}
@@ -267,4 +267,4 @@ const BossChair = () => {
   );
 };
 
-export default BossChair;
+export default ExecutiveChair;

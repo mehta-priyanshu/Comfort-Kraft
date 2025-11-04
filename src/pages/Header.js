@@ -8,7 +8,7 @@ import chair3 from "../assets/DiningChairs/chair3.jpeg";
 import chair4 from "../assets/StudyChairs/chair4.jpeg";
 
 const linkPreviews = {
-  "/office-chair": {
+  /*"/office-chair": {
     title: "Office Chairs",
     desc: "Ergonomically designed office chairs for all-day productivity and comfort.",
     image: chair1,
@@ -27,10 +27,20 @@ const linkPreviews = {
     title: "Study Chairs",
     desc: "Flexible, supportive study chairs for students and home workspaces.",
     image: chair4,
+  },*/
+  "/ergonomics-chair": {
+    title: "Ergonomic Chairs",
+    desc: "Chairs designed to provide optimal support and comfort for long hours of sitting.",
+    image: chair2,
+  },
+  "/executive-chair": {
+    title: "Executive Chairs",
+    desc: "Chairs designed to provide optimal support and comfort for long hours of sitting.",
+    image: chair2,
   },
 };
 
-const navLinks = ["/office-chair", "/boss-chair", "/dining-chair", "/study-chair"];
+const navLinks = ["/ergonomics-chair", "/executive-chair"];
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

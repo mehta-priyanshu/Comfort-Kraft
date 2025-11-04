@@ -20,6 +20,8 @@ import StudyChair from './pages/StudyChair';
 import Faq from './pages/FAQs'; 
 import HelpCenter from './pages/Helpcenter'; 
 import ScrollToTop from './pages/ScrollToTop';
+import ErgonomicChair from './pages/ErgonomicsChair';
+import ExecutiveChair from './pages/ExecutiveChair';
 
 function AdminStateManager() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -58,6 +60,8 @@ function AdminStateManager() {
           <Route path="/study-chair" element={<StudyChair isAdmin={isAdmin} />} />
           <Route path="/faqs" element={<Faq />} />
           <Route path="/help-center" element={<HelpCenter />} />
+          <Route path="/ergonomics-chair" element={<ErgonomicChair isAdmin={isAdmin} />} />
+          <Route path="/executive-chair" element={<ExecutiveChair isAdmin={isAdmin} />} />
           {/*<Route path="/Cart" element={<Cart />} />*/}
           {/* <Route path="/checkout" element={<Checkout />} />
           You can add more routes here later */}
