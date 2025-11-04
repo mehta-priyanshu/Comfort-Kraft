@@ -1,3 +1,4 @@
+// not in use currently, but kept for future reference
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "../styles/Shop.css";

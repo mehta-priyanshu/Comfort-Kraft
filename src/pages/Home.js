@@ -258,39 +258,59 @@ const ChairLinksSection = () => {
       {/* Benefit section */}
       <BenefitsSection />
 
-      {/* Featured Chairs Section: ONLY first 3 images */}
-      <div className="section-featured container">
-        <h2 className="text-neon-blue text-center">Featured Chairs</h2>
-        <div className="row">
-          {featuredChairs.slice(0, 3).map((chair) => (
-            <div className="col-md-4 mb-4" key={chair.id}>
-              <div className="card h-100 shadow-lg">
-                <img
-                  src={chair.image}
-                  alt={chair.name}
-                  className="card-img-top"
-                  style={{
-                    height: "300px",
-                    objectFit: "contain",
-                    padding: "10px",
-                    backgroundColor: "#faf8f3",
-                  }}
-                />
-                <div className="card-body d-flex flex-column justify-content-between">
-                  <h5 className="card-title">{chair.name}</h5>
-                  <p className="text-neon-green h5">{`₹${chair.price}`}</p>
-                  <button
-                    className="btn-neon mt-3"
-                    onClick={() => navigate(`/product/${chair.id}`)}
-                  >
-                    View Details
-                  </button>
-                </div>
+{/* Featured Chairs Section: ONLY first 3 images */}
+<div className="section-featured container">
+  <h2 className="text-neon-blue text-center">Featured Chairs</h2>
+  <div className="row">
+    {featuredChairs.slice(0, 3).map((chair) => {
+      const whatsappNumber = "918307916784"; // <-- Add your WhatsApp number (NO +)
+      const whatsappMessage = `Hi, I'm interested in the chair: ${chair.name} (Product ID: ${chair.id}). Please share details.`; 
+
+      return (
+        <div className="col-md-4 mb-4" key={chair.id}>
+          <div className="card h-100 shadow-lg">
+            <img
+              src={chair.image}
+              alt={chair.name}
+              className="card-img-top"
+              style={{
+                height: "300px",
+                objectFit: "contain",
+                padding: "10px",
+                backgroundColor: "#faf8f3",
+              }}
+            />
+            <div className="card-body d-flex flex-column justify-content-between">
+              <h5 className="card-title">{chair.name}</h5>
+              <p className="text-neon-green h5">{`₹${chair.price}`}</p>
+
+              <div className="d-flex gap-2 mt-3">
+                <button
+                  className="btn-neon w-50"
+                  onClick={() => navigate(`/product/${chair.id}`)}
+                >
+                  View Details
+                </button>
+
+                <a
+                  className="btn-neon w-50"
+                  href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                    whatsappMessage
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
               </div>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
+      );
+    })}
+  </div>
+</div>
+
     <WhyComfortKraftSection />
     <ChairLinksSection />
     </div>

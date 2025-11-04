@@ -12,7 +12,7 @@ const ErgonomicsChairProducts = [
     price: 11499,
     imageUrl: D_L0095,
     description: "Sleek modern chair for dynamic living spaces.",
-    chairType: "Boss Chair",
+    /*chairType: "Boss Chair",*/
     color: "Black",   // Added default color for filtering
     inStock: true,    // Added stock status for filtering
   },

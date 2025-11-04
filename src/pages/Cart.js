@@ -1,3 +1,4 @@
+// not in use currently, but kept for future reference
 import React, { useState } from "react";
 import "../styles/Cart.css";
 
