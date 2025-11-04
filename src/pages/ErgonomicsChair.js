@@ -256,9 +256,19 @@ const ErgonomicChair = () => {
             <p className="product-desc">{prod.description}</p>
             <span className="product-price">₹{prod.price.toLocaleString()}</span>
             <div className="product-actions">
-              <button className="btn-neon" onClick={() => navigate(`/product/${prod.id}`)}>
-                View Details
-              </button>
+                <button className="btn-neon" onClick={() => navigate(`/product/${prod.id}`)}>
+                    View Details
+                </button>
+
+                {/* WhatsApp Button */}
+                <a 
+                    href={`https://wa.me/918307916784?text=Hi! I want to know more about ${encodeURIComponent(prod.name)}.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-whatsapp"
+                >
+                    <i className="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
           </div>
         ))}
