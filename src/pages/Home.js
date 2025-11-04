@@ -1,54 +1,61 @@
 import React, { useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Home.css";
-import chair1 from "../assets/OfficeChairs/chair1.jpeg";
+/*import chair1 from "../assets/OfficeChairs/chair1.jpeg";
 import chair2 from "../assets/BossChairs/chair2.jpeg";
 import chair3 from "../assets/DiningChairs/chair3.jpeg";
 import chair4 from "../assets/StudyChairs/chair4.jpeg";
 import chair5 from "../assets/DiningChairs/chair5.jpeg";
-import chair6 from "../assets/DiningChairs/chair6.jpeg";
+import chair6 from "../assets/DiningChairs/chair6.jpeg";*/
+
+import D_L0095 from "../assets/ErgonomicsChairs/5D_L0095.JPG";
+import D_L0097 from "../assets/ErgonomicsChairs/5D_L0097.JPG";
+import D_L0098 from "../assets/ErgonomicsChairs/5D_L0098.JPG";
+import D_L0099 from "../assets/ErgonomicsChairs/5D_L0099.JPG";
+import D_L0002 from "../assets/ExecutiveChairs/5D_L0002.JPG";
+import D_L0004 from "../assets/ExecutiveChairs/5D_L0004.JPG";
 
 const featuredChairs = [
   {
     id: "1",
     name: "NeoGlow Recliner",
     price: 14999,
-    image: chair1,
+    image: D_L0095,
     description: "Futuristic recliner with ergonomic support.",
   },
   {
     id: "2",
     name: "CyberSit Alpha",
     price: 11499,
-    image: chair2,
+    image: D_L0097,
     description: "Sleek modern chair for dynamic living spaces.",
   },
   {
     id: "3",
     name: "Quantum Comfort",
     price: 16299,
-    image: chair3,
+    image: D_L0098,
     description: "Premium chair engineered for all-day comfort.",
   },
   {
     id: "4",
     name: "Study Master Pro",
     price: 12999,
-    image: chair4,
+    image: D_L0099,
     description: "Ergonomic study chair with adjustable features.",
   },
   {
     id: "5",
     name: "Elegant Dining Chair",
     price: 8999,
-    image: chair5,
+    image: D_L0002,
     description: "Stylish chair perfect for modern dining rooms.",
   },
   {
     id: "6",
     name: "Classic Wooden Chair",
     price: 7499,
-    image: chair6,
+    image: D_L0004,
     description: "Timeless wooden chair with a rustic finish.",
   }
 ];
@@ -187,16 +194,16 @@ const Home = () => {
 
 const pageLinks = [
   {
-    label: "Office Chairs",
-    image: chair1,
-    path: "/office-chair"
+    label: "Ergonomic Chairs",
+    image: D_L0095,
+    path: "/ergonomics-chair"
   },
   {
-    label: "Boss Chairs",
-    image: chair2,
-    path: "/boss-chair"
+    label: "Executive Chairs",
+    image: D_L0002,
+    path: "/executive-chair"
   },
-  {
+  /*{
     label: "Dining Chairs",
     image: chair3,
     path: "/dining-chair"
@@ -205,7 +212,7 @@ const pageLinks = [
     label: "Study Chairs",
     image: chair4,
     path: "/study-chair"
-  }
+  }*/
 ];
 
 const ChairLinksSection = () => {
