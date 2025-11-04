@@ -2,10 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/Header.css";
 
-import chair1 from "../assets/OfficeChairs/chair1.jpeg";
-import chair2 from "../assets/BossChairs/chair2.jpeg";
-import chair3 from "../assets/DiningChairs/chair3.jpeg";
-import chair4 from "../assets/StudyChairs/chair4.jpeg";
+import D_L0095 from "../assets/ErgonomicsChairs/5D_L0095.JPG";
+import D_L0002 from "../assets/ExecutiveChairs/5D_L0002.JPG";
 
 const linkPreviews = {
   /*"/office-chair": {
@@ -31,12 +29,12 @@ const linkPreviews = {
   "/ergonomics-chair": {
     title: "Ergonomic Chairs",
     desc: "Chairs designed to provide optimal support and comfort for long hours of sitting.",
-    image: chair2,
+    image: D_L0095,
   },
   "/executive-chair": {
     title: "Executive Chairs",
     desc: "Chairs designed to provide optimal support and comfort for long hours of sitting.",
-    image: chair2,
+    image: D_L0002,
   },
 };
 
